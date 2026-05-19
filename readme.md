@@ -14,21 +14,57 @@ A data analysis project exploring coffee sales performance across **three NYC lo
 
 ## 📊 Highlights
 
-| Metric                     | Value    |
-| -------------------------- | -------- |
-| 💰 Total Revenue           | $698,812 |
-| 🧾 Total Transactions      | 149,116  |
-| 💵 Revenue Per Transaction | $4.69    |
-| 📦 Units Per Transaction   | 1.44     |
+| Metric | Value |
+|---|---|
+| 💰 Total Revenue | $698,812 |
+| 🧾 Total Transactions | 149,116 |
+| 💵 Revenue Per Transaction | $4.69 |
+| 📦 Units Per Transaction | 1.44 |
 
+---
+
+## 🗃️ Dataset
+
+### Original Columns
+
+| Column | Description |
+|---|---|
+| `transaction_id` | Unique identifier for each transaction |
+| `transaction_date` | Date the transaction occurred |
+| `transaction_time` | Time the transaction occurred |
+| `transaction_qty` | Number of units purchased |
+| `store_id` | Unique identifier for the store |
+| `store_location` | Store location name |
+| `product_id` | Unique identifier for the product |
+| `unit_price` | Price per unit |
+| `product_category` | High-level product category (e.g. Coffee, Tea, Bakery) |
+| `product_type` | Product type within the category |
+| `product_detail` | Specific product name |
+
+### 🔧 Feature Engineering
+
+Four new columns were added to support time-based and revenue analysis:
+
+| Column | Description |
+|---|---|
+| `Revenue` | Calculated as `transaction_qty × unit_price` |
+| `Month` | Extracted from `transaction_date` |
+| `Day_of_week` | Extracted from `transaction_date` |
+| `Hour` | Extracted from `transaction_time` |
+
+### 🧹 Data Cleaning
+
+- Removed duplicate records
+- Handled null values
+
+---
 ---
 
 ## 📊 Dashboard
 
-![coffee shop sales dashboard](Images/Dashboard.png)
+![coffee shop sales dashboard](dashboard/Dashboard.png)
 
 ---
-
 ## 💡 Key Insights
 
 - **Revenue more than doubled** from January ($81K) to June ($166K) — a 103% growth over 6 months
@@ -43,13 +79,13 @@ A data analysis project exploring coffee sales performance across **three NYC lo
 
 ## 🏆 Top Products
 
-| Product               | Category           | Revenue |
-| --------------------- | ------------------ | ------- |
-| Barista Espresso      | Coffee             | $91,406 |
-| Brewed Chai Tea       | Tea                | $77,082 |
-| Hot Chocolate         | Drinking Chocolate | $72,416 |
-| Gourmet Brewed Coffee | Coffee             | $70,035 |
-| Brewed Black Tea      | Tea                | $47,932 |
+| Product | Category | Revenue |
+|---|---|---|
+| Barista Espresso | Coffee | $91,406 |
+| Brewed Chai Tea | Tea | $77,082 |
+| Hot Chocolate | Drinking Chocolate | $72,416 |
+| Gourmet Brewed Coffee | Coffee | $70,035 |
+| Brewed Black Tea | Tea | $47,932 |
 
 ---
 
@@ -79,4 +115,4 @@ coffee-sales-analysis/
 
 ---
 
-_Data covers January – June | All 3 locations combined_
+*Data covers January – June | All 3 locations combined*
