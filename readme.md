@@ -1,7 +1,14 @@
-# ☕ NYC Coffee Shop — Sales Analysis
+<div align="center">
+  
+#  NYC Coffee Shop | Sales Analysis
 
-A data analysis project exploring coffee sales performance across **three NYC locations**: Astoria, Hell's Kitchen, and Lower Manhattan — covering 6 months of transactional data.
+![Tool](https://img.shields.io/badge/Tool-Microsoft%20Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white)
+![Domain](https://img.shields.io/badge/Domain-Retail%20%26%20Sales-brown?style=flat-square)
+![Locations](https://img.shields.io/badge/Locations-3%20NYC%20Stores-blue?style=flat-square)
+![Transactions](https://img.shields.io/badge/Transactions-149%2C116-orange?style=flat-square)
 
+A data analysis project exploring coffee sales performance across **three NYC locations**: Astoria, Hell's Kitchen, and Lower Manhattan covering 6 months of transactional data.
+<div>
 ---
 
 ## 🗺️ Locations
@@ -58,13 +65,7 @@ Four new columns were added to support time-based and revenue analysis:
 - Handled null values
 
 ---
----
 
-## 📊 Dashboard
-
-![coffee shop sales dashboard](dashboard/Dashboard.png)
-
----
 ## 💡 Key Insights
 
 - **Revenue more than doubled** from January ($81K) to June ($166K) — a 103% growth over 6 months
